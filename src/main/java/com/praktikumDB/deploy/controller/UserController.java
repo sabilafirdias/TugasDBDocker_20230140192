@@ -22,5 +22,10 @@ public class UserController {
         return "User created successfully";
     }
 
+    @GetMapping
+    public List<User> getAllUsers(){
+        return userService.getAllUser();
+    }
+
 
 }
