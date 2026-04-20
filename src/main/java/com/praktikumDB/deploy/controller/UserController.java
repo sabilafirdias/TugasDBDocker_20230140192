@@ -33,5 +33,9 @@ public class UserController {
         return "User deleted successfully";
     }
 
+    @GetMapping("/{id}")
+    public User getUserById(@PathVariable String id) {
+        return userService.getUserById(id);
+    }
 
 }
